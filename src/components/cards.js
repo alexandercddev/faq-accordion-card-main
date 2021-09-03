@@ -6,8 +6,17 @@
 import React, { useState } from 'react';  
 import illustration from '../assets/svgs/illustration-woman-online-desktop.svg';
 
-export function CardFAQ(props) { 
-    const { items } = props;
+export function CardFAQ(props) {   
+    const [ context, setContext ] = useState(props.items);  
+    const handleClick = (key) => {  
+        let items = context.map((item, index) => {
+            item.active = item.key === key 
+            ? ( item.active === 'active' ? '' : 'active' )
+            : '';
+            return item;
+        }) 
+        setContext(items);
+    }
     return (    
         <div className="card__faq">
             <div className="card__img">
@@ -16,12 +25,15 @@ export function CardFAQ(props) {
             <div className="card__content">
                 <h3 className="card__title">FAQ</h3>
                 <ul>
-                    {items.map((item, index) => {
+                    {context.map((item, index) => {
                         return (
                             <ItemFAQ 
-                                key={`item-faq-${index}`}
+                                id={item.key}
+                                active={item.active}
+                                key={item.key}
                                 question={item.question}
-                                response={item.response}/>
+                                response={item.response}
+                                handleClick={handleClick}/>
                         )
                     })}
                 </ul>
@@ -31,23 +43,18 @@ export function CardFAQ(props) {
 }
 
 export function ItemFAQ(props) {
-    const { question, response } = props;
-    const [ arrow, setArrow ] = useState('arrow__up');
-    const handleClick = (event) => {
-        setArrow( arrow === 'arrow__down' 
-            ? 'arrow__up' 
-            : 'arrow__down'
-        );
-    }
+    const { question, response, handleClick, active, id } = props;   
     return (
         <li className="item__collaps">
-            <div className="question" onClick={handleClick}>
-                <span className="question__text">
+            <div id={id} className={`question ${active}`} onClick={()=> {handleClick(id)}}>
+                <span className={`question__text`}>
                     {question}
                 </span> 
-                <span className={`${arrow}`}></span>
+                <div className="item__arrow">
+                    <span className={`arrow ${active}`}></span>
+                </div>
             </div> 
-            <div className="response">
+            <div className={`response ${active}`}>
                 {response}
             </div>
         </li>
