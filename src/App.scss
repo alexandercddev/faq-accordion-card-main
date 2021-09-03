@@ -145,3 +145,56 @@ li {
     transform:rotate(180deg);
 } 
  
+
+/** mobile **/ 
+@media (min-width: 320px) and (max-width: 992px) {
+    .container {
+        width: 100%;
+        height: 100%; 
+    }
+
+    .card__faq {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        margin-top: 150px;
+        background-image: url('./assets/svgs/bg-pattern-mobile.svg');
+        background-position-x: 50%;
+        background-position-y: 00px;
+    }    
+
+    .card__img::after {
+        content: ' ';
+    }
+
+    .img {
+        left: -13px;
+        content: url('./assets/svgs/illustration-woman-online-mobile.svg');
+    }
+
+    .card__img {
+        overflow: auto; 
+        position: relative;
+        left: -0;  
+    }
+
+    .card__img, .card__content {
+        width: 100%;
+        top: -157px;
+    }
+
+    h3.card__title {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+
+    .card__content {
+        margin-top: -120px;
+        margin-bottom: 20px;
+        font-size: $fontSize;
+    }
+
+}
