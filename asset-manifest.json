@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/faq-accordion-card-main/static/css/main.2f948b26.chunk.css",
+    "main.css": "/faq-accordion-card-main/static/css/main.dc42874a.chunk.css",
     "main.js": "/faq-accordion-card-main/static/js/main.bae3c4eb.chunk.js",
     "main.js.map": "/faq-accordion-card-main/static/js/main.bae3c4eb.chunk.js.map",
     "runtime-main.js": "/faq-accordion-card-main/static/js/runtime-main.492a1593.js",
@@ -10,15 +10,15 @@
     "static/js/3.e9bd9d0d.chunk.js": "/faq-accordion-card-main/static/js/3.e9bd9d0d.chunk.js",
     "static/js/3.e9bd9d0d.chunk.js.map": "/faq-accordion-card-main/static/js/3.e9bd9d0d.chunk.js.map",
     "index.html": "/faq-accordion-card-main/index.html",
-    "static/css/main.2f948b26.chunk.css.map": "/faq-accordion-card-main/static/css/main.2f948b26.chunk.css.map",
+    "static/css/main.dc42874a.chunk.css.map": "/faq-accordion-card-main/static/css/main.dc42874a.chunk.css.map",
     "static/js/2.d857ddbe.chunk.js.LICENSE.txt": "/faq-accordion-card-main/static/js/2.d857ddbe.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/faq-accordion-card-main/static/media/illustration-box-desktop.ec1ba14b.svg",
+    "static/media/App.scss": "/faq-accordion-card-main/static/media/illustration-woman-online-mobile.0ec5a893.svg",
     "static/media/illustration-woman-online-desktop.843eb114.svg": "/faq-accordion-card-main/static/media/illustration-woman-online-desktop.843eb114.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.492a1593.js",
     "static/js/2.d857ddbe.chunk.js",
-    "static/css/main.2f948b26.chunk.css",
+    "static/css/main.dc42874a.chunk.css",
     "static/js/main.bae3c4eb.chunk.js"
   ]
 }
